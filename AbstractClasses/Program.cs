@@ -8,16 +8,16 @@ namespace AbstractClasses
 {
     class Program
     {
-        public static void Main(string[] args)
+         static void Main(string[] args)
         {
-          Employee Employee = new Employee
-            {
-                FirstName = "Student",
-                LastName = "Sample"
-            };
-
+            Employee Employee = new Employee
+            { FirstName = "Student", LastName = "Sample" };
             Employee.SayName();
             {
+                Employee MyEmployee = new Employee();  
+                MyEmployee.Quit();
+
+                
                 Console.ReadLine();
             }
         }
